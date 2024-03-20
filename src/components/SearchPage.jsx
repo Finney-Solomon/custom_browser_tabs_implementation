@@ -31,8 +31,8 @@ export const SearchPage = () => {
 
   const handleSearch = async () => {
     try {
-      const apiKey = "AIzaSyD5bydJK86C-hkUQjVH3VleS6188a7P7w4";
-      const cx = "a6a2b4a00b12b48ad";
+      const apiKey = "-";
+      const cx = "";
       const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${query}&key=${apiKey}&cx=${cx}`;
       const response = await axios.get(apiUrl, { timeout: 5000 });
       handleSearchResults(response.data.items);
